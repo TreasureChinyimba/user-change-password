@@ -49,6 +49,8 @@
         function changePassword() {
             const newPassword = document.getElementById('new-password').value;
             const confirmPassword = document.getElementById('confirm-password').value;
+            const oldPassword = document.getElementById('old-password').value;
+
           
             const passwordStrengthElement = document.getElementById('password-strength');
           
@@ -65,7 +67,8 @@
             }
           
             // Password is strong and matches
-            passwordStrengthElement.textContent = 'Password is strong and matches.';
+            passwordStrengthElement.textContent = 'Your password has been changed successfuly.';
+            
         }
     </script>   
 </body>
